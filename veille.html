@@ -6,11 +6,84 @@
 -->
 <html>
 	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
+		<title>Veille Technologique - Automatisation des processus numériques</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.source-card {
+				background-color: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+				padding: 20px;
+				margin-bottom: 30px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+			.source-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			}
+			.logo-container {
+				flex: 0 0 150px;
+				text-align: center;
+				margin-right: 20px;
+				background: transparent;
+			}
+			.logo-container img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 0;
+				object-fit: contain;
+				background: transparent;
+				box-shadow: none;
+				border: none;
+			}
+			.source-content {
+				flex: 1;
+				min-width: 200px;
+			}
+			.tool-card {
+				background-color: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+				padding: 20px;
+				margin-bottom: 30px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease;
+			}
+			.tool-card:hover {
+				transform: translateY(-5px);
+			}
+			.tool-card .logo-container {
+				margin: 0 auto 20px auto;
+				max-width: 200px;
+				background: transparent;
+			}
+			.tool-card .logo-container img {
+				border-radius: 0;
+				background: transparent;
+				box-shadow: none;
+				border: none;
+			}
+			h2 {
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #6fc3df;
+				margin-top: 40px;
+			}
+			h3 {
+				font-family: 'Raleway', sans-serif;
+				font-weight: 600;
+				color: #8d82c4;
+			}
+			p {
+				font-family: 'Open Sans', sans-serif;
+				line-height: 1.7;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -32,43 +105,76 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">EXEMPLE</h1>
-							<h2><u>L'automatisation:</u></h2>
-							<p>J'ai choisi l'automatisation comme sujet de veille l'automatisation car elle est devenue important dans notre sociéte numérique.
-							En effet L’automatisation désigne l’utilisation de technologies pour effectuer des tâches ou des processus sans intervention humaine directe. Cela peut inclure l’utilisation de machines, de logiciels ou de systèmes intelligents pour exécuter des actions répétitives, améliorer l’efficacité, réduire les erreurs et libérer du temps pour des activités plus complexes. L’automatisation peut concerner des domaines variés, comme l’industrie (avec des robots industriels), la gestion des données, ou même des tâches quotidiennes grâce à des outils numériques comme les assistants virtuels.  </p>
-							<p>Ce sujet rentre egalement en lien avec mon domaine d’étude car en BTS SIO En tant que futur développeur, je serai amené à utiliser des outils permettant d’automatiser certaines parties du processus de développement logiciel comme des test automatisé ou exception (Itération 1 : Test unitaire).</p>
-							<p>Dans le cadre de l'automatisation de la collecte, du traitement et de l'analyse des données, prenons l'exemple d'une base de données avec une propriété NOT NULL . Cette contrainte signifie qu'une certaine colonne dans la base de données ne peut pas contenir de valeur nulle, garantissant ainsi que chaque enregistrement de cette colonne contient une donnée valide.</p>
-							<ul class="actions">
-								<li><a href="https://www.ibm.com/fr-fr/topics/automation" class="button primary">Voir sur la Source</a></li>
-								</ul>
-							<h3><u>Exemple:</u></h3>
-							<span class="image fit">
-								<img src="images/BDD.PNG" alt="" style="max-width: 45%; height: auto;" />
-							</span>
-							<p>Imaginons que des données clients sont collectées via un formulaire en ligne. L'automatisation peut être mise en place pour vérifier que les données soumises respectent la contrainte NOT NULL sur l'email. Si un client soumet un formulaire sans email, le système peut automatiquement rejeter l'enregistrement ou renvoyer un message demandant à l'utilisateur de compléter son email.</p>
-							<h2><u>Newsletter :</u></h2>
-							<p>Definition:</p>
-							<p>Une newsletter est un courrier électronique, plus précisément un bulletin d'information, envoyé à un groupe de personnes qui s'y sont abonnées.</p>
-							<p>Une newsletter peut être un excellent outil de veille technologique, car elle permet de recevoir régulièrement des informations ciblées sur les tendances, innovations, et nouveautés dans un domaine spécifique.</p>
-							<ul class="actions">
-								<li><a href="https://fr.wikipedia.org/wiki/Lettre_d'information" class="button primary">Voir la Source</a></li>
-							</ul>
-							<h3><u>Stratechery (de Ben Thompson) :</u></h3>
-							<p>Fournit une analyse approfondie des stratégies des grandes entreprises technologiques comme Google, Apple, et Microsoft.</p>
-							<h3><u>TechCrunch:</u></h3>
-							<p>Propose une newsletter quotidienne sur les nouveautés des entreprises technologiques.</p>
-							<h3><u>Voici un exemple du groupe gartner Group:</u></h3>
-							<p>Ici, vous pouvez apercevoir un graphique envoyé grâce à une newsletter, dans lequel vous pouvez observer plusieurs entreprises représentées. Le but de ce graphique est de montrer quelle entreprise est la plus susceptible de lancer de nouvelles innovations technologiques grâce à plusieurs critères tels que :
-								<p>- la capacité d’investissement en recherche et développement</p> 
-								<p>- le niveau d’adoption des technologies émergentes</p>
-								<p>- la diversité des brevets déposés</p>
-								<p>- ainsi que l’agilité dans l’adaptation aux tendances du marché.</p>
-							<span class="image fit">
-								<img src="images/gatner.jpg" alt="" style="max-width: 45%; height: auto;" />
-							</span>
+							<h1 class="major">Veille Technologique</h1>
+							<h2>La RPA (Robotic Process Automation)</h2>
+							<p>J'ai choisi la RPA comme sujet de veille technologique car elle est devenue importante dans notre société connectée.
+							En effet, la RPA désigne l'utilisation des technologies numériques pour automatiser des processus métiers, c'est-à-dire des tâches ou des séries d'activités répétitives au sein d'une organisation.</p>
+							<p>Ce sujet rentre également en lien avec mon domaine d'étude car en BTS SIO. En tant que futur développeur, je serai amené à utiliser des outils permettant d'automatiser certaines parties du processus de développement logiciel.</p>
+							<p>Il existe deux grands types de RPA :</p>
+							
+							<h3>La RPA métiers</h3>
+							<p>La RPA métier fait référence aux technologies utilisées pour automatiser les tâches et les processus répétitifs afin de rationaliser les workflows et les systèmes de technologie de l'information (TI).</p>
+							
+							<h3>La RPA informatique</h3>
+							<p>La RPA informatique est la création et la mise en œuvre de systèmes et de logiciels automatisés à la place de tâches manuelles fastidieuses qui exigeaient auparavant une intervention humaine.</p>	
+							
+							<h2>Sources</h2>
+							<div class="source-card">
+								<div class="logo-container">
+									<img src="images/IBM.png" alt="IBM Logo" />
+								</div>
+								<div class="source-content">
+									<p>IBM propose des solutions d'automatisation avancées pour les entreprises, couvrant l'automatisation des processus robotiques, l'intelligence artificielle et l'automatisation des workflows.</p>
+									<ul class="actions">
+										<li><a href="https://www.ibm.com/fr-fr/topics/automation" class="button primary">Consulter la source</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="source-card">
+								<div class="logo-container">
+									<img src="images/red2.png" alt="Red Hat Logo" />
+								</div>
+								<div class="source-content">
+									<p>Red Hat offre des solutions d'automatisation open source permettant aux organisations d'optimiser leurs processus IT et leurs infrastructures.</p>
+									<ul class="actions">
+										<li><a href="https://www.redhat.com/fr/topics/automation" class="button primary">Consulter la source</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<h2>Outils d'automatisation</h2>
+							<p>Différents outils permettant l'utilisation de cette technologie :</p>
+							
+							<div class="tool-card">
+								<h3>UiPath</h3>
+								<div class="logo-container">
+									<img src="images/uiù.png" alt="UiPath Logo" />
+								</div>
+								<p>- Leader en RPA (Robotic Process Automation)</p>
+								<p>- Permet d'automatiser des processus complexes en simulant les actions humaines sur un ordinateur</p>	
+								<p>- Adapté aux entreprises de toutes tailles</p>
+							</div>
+							
+							<div class="tool-card">
+								<h3>Selenium</h3>
+								<div class="logo-container">
+									<img src="images/se(2).jpg" alt="Selenium Logo" />
+								</div>
+								<p>- Outil pour l'automatisation des tests fonctionnels des applications web</p>
+								<p>- Simule un vrai utilisateur qui clique, remplit des formulaires, etc.</p>
+							</div>
+							
+							<div class="tool-card">
+								<h3>Postman</h3>
+								<div class="logo-container">
+									<img src="images/postman-transparent.png" alt="Postman Logo" />
+								</div>
+								<p>Postman permet de créer des requêtes API, afin de les exécuter automatiquement en ligne de commande pour réaliser des tests automatisés d'API.</p>
+								<p>Exemple d'utilisation : Imaginons que des données clients sont collectées via un formulaire en ligne. L'automatisation peut être mise en place pour vérifier que les données soumises respectent la contrainte NOT NULL sur l'email. Si un client soumet un formulaire sans email, le système peut automatiquement rejeter l'enregistrement ou renvoyer un message demandant à l'utilisateur de compléter son email.</p>
+							</div>
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Footer -->
